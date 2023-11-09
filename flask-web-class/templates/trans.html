@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>Transformers</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Transformers</h1>
+    <div class="udn-trans"></div>
+</div>
+<div class="main-content">
+    <p>The Transformer is a type of deep learning model architecture introduced
+        by Vaswani et al. in the paper "Attention is All You Need" in 2017.
+        Unlike traditional recurrent neural networks (RNNs) or convolutional
+        neural networks (CNNs), the Transformer relies entirely on
+        self-attention mechanisms to capture relationships between different
+        words in a sequence.
+
+        Key features of the Transformer architecture include:
+
+        Self-Attention Mechanism: Instead of processing input sequences
+        sequentially, the Transformer processes all elements in parallel using
+        self-attention. This allows the model to weigh the importance of
+        different words in the sequence concerning each other.
+
+        Encoder-Decoder Structure: The Transformer architecture is commonly used
+        for sequence-to-sequence tasks, such as machine translation. It consists
+        of an encoder and a decoder, both composed of multiple layers of
+        self-attention mechanisms.
+
+        Multi-Head Attention: To capture different aspects of relationships
+        between words, the Transformer employs multiple attention heads within
+        each attention mechanism. This allows the model to attend to different
+        parts of the input sequence simultaneously.
+
+        Positional Encoding: Since the Transformer lacks inherent sequential
+        information, positional encodings are added to the input embeddings to
+        provide information about the position of each element in the sequence.
+
+        Feedforward Neural Networks: Each attention layer is followed by a
+        feedforward neural network, adding a non-linear element to the model.
+
+        Transformers have achieved remarkable success in various natural
+        language processing tasks, including machine translation, text
+        summarization, and language modeling. Their parallelization capabilities
+        and ability to capture long-range dependencies make them particularly
+        effective for processing sequences of data. Notably, models like BERT
+        (Bidirectional Encoder Representations from Transformers) have set new
+        benchmarks in tasks like natural language understanding and transfer
+        learning.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>Prompt Engineering</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Prompt Engineering</h1>
+    <div class="udn-pe"></div>
+</div>
+<div class="main-content">
+    <p>Prompt engineering is a strategic approach in natural language processing
+        (NLP) and machine learning where careful design and formulation of input
+        prompts or queries are used to guide models in generating specific and
+        desired outputs. In tasks such as language generation, text completion,
+        or question answering, the choice of words, structure, and context in a
+        prompt significantly influences the response from the model. Engineers
+        and researchers use prompt engineering to fine-tune the input so that
+        the model produces accurate, contextually appropriate, and relevant
+        results. It involves understanding the model's strengths and weaknesses
+        and crafting prompts to leverage its capabilities effectively.
+        Successful prompt engineering can enhance the performance of language
+        models and improve their responsiveness to user queries or commands.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

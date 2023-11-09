@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>Temperature Scaling</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Temperature Scaling</h1>
+    <div class="udn-ts"></div>
+</div>
+<div class="main-content">
+    <p>Temperature scaling is a technique used in the calibration of confidence
+        scores produced by neural networks, particularly in the context of
+        probabilistic classification tasks within artificial intelligence. In
+        essence, it involves adjusting the output distribution of a trained
+        model by introducing a temperature parameter.
+
+        Neural networks, when providing predictions, often produce output
+        probabilities that may not align well with the actual confidence or
+        uncertainty in those predictions. Temperature scaling involves dividing
+        the pre-softmax logits (the inputs to the softmax function, which
+        converts them into probabilities) by a temperature parameter. This
+        adjustment influences the shape of the probability distribution, making
+        it smoother or sharper.
+
+        By fine-tuning the temperature, practitioners can better align the model's
+        predicted probabilities with its actual confidence levels. This process
+        helps improve the reliability of the model's uncertainty estimates,
+        making the outputs more calibrated and providing a more accurate
+        reflection of the model's confidence in its predictions. Temperature
+        scaling is a valuable tool in refining the interpretability and
+        reliability of machine learning models.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

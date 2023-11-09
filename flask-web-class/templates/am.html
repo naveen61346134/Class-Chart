@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>Attention Mechanisms</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Attention Mechanisms</h1>
+    <div class="udn-am"></div>
+</div>
+<div class="main-content">
+    <p>The attention mechanism typically involves three key components:
+
+        Query, Key, and Value: These are concepts borrowed from information
+        retrieval. The query is the element we want to obtain information about,
+        the key is the element we are comparing the query to, and the value is
+        the information we want to retrieve.
+
+        Attention Scores: The attention mechanism computes attention scores,
+        indicating how much focus should be given to each element in the input
+        sequence concerning the current output being generated.
+
+        Weighted Sum: The final step involves taking a weighted sum of the
+        values based on the computed attention scores. This weighted sum becomes
+        part of the input for generating the next element in the output
+        sequence.
+
+        Attention mechanisms have greatly improved the performance of neural
+        networks in tasks like machine translation, text summarization, and
+        image captioning. They enable the model to selectively attend to
+        relevant information, allowing for more accurate and context-aware
+        predictions.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

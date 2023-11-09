@@ -1,0 +1,70 @@
+body {
+    background-image: url("/Assets/gifs/network.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 21px 20px;
+    color: #FFD700;
+}
+
+.main-head-block {
+    text-align: center;
+    font-size: medium;
+}
+
+.main-head {
+    color: #00FF00;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.udn {
+    margin: 0px auto 0px auto;
+    height: 2px;
+    width: 350px;
+    background: #00CED1;
+}
+
+.main-brief-content {
+    margin: 10px 20px;
+    font-weight: 600;
+}
+
+.main-algo-content {
+    color: #FF00FF;
+}
+
+.algo-content-brief {
+    color: #FFD700;
+    font-weight: 400;
+}
+
+.bullets {
+    color: #00FFFF;
+}
+
+.algo-wrapper {
+    display: flex;
+}
+
+.algo-content {
+    text-decoration: none;
+    color: aquamarine;
+    margin-left: 10px;
+}
+
+.algo-content:hover {
+    opacity: 50%;
+}
+
+.parser-main {
+    display: flex;
+}
+
+.parser5 {
+    margin-right: 20px;
+}

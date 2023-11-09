@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>GRU</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Gated Recurrent Unit(GRU)</h1>
+    <div class="udn-gru"></div>
+</div>
+<div class="main-content">
+    <p>Gated Recurrent Unit (GRU) is another type of recurrent neural network
+        (RNN) architecture, introduced by Kyunghyun Cho et al. in 2014. Similar
+        to Long Short-Term Memory (LSTM), GRU is designed to address the
+        vanishing gradient problem in traditional RNNs and to capture long-term
+        dependencies in sequential data. GRU offers a simplified structure
+        compared to LSTM, using fewer parameters and computations.
+
+        Here are the key components and features of the Gated Recurrent Unit:
+
+        1. **Update Gate and Reset Gate:** GRU introduces two gates:
+        - **Update Gate:** Controls how much of the previous hidden state should
+        be retained.
+        - **Reset Gate:** Determines how much of the past information should be
+        forgotten.
+
+        2. **Hidden State:** GRU maintains a hidden state that carries
+        information across time steps, much like the hidden state in traditional
+        RNNs. The update and reset gates influence the modification of this
+        hidden state.
+
+        3. **Simplification of Architecture:** GRU simplifies the architecture
+        compared to LSTM by combining the cell state and hidden state into a
+        single state. It uses a gating mechanism to control the flow of
+        information, allowing it to capture long-range dependencies without the
+        complexity of maintaining a separate cell state.
+
+        4. **Less Pronounced Memory Cells:** Unlike LSTM, which has explicit
+        memory cells, GRU has a more streamlined structure where the hidden
+        state performs a similar function without a distinct memory cell.
+
+        5. **Efficiency:** Due to its simplified structure, GRUs are
+        computationally less expensive compared to LSTMs, making them more
+        efficient for certain applications.
+
+        Overall, GRUs have proven to be effective in various sequence-based
+        tasks, such as natural language processing, speech recognition, and time
+        series analysis. They strike a balance between model complexity and
+        efficiency, providing a viable alternative to LSTMs in scenarios where
+        computational resources are a concern or where a simpler architecture is
+        preferred.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

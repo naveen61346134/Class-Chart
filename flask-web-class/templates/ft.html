@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>Fine-Tuning</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Fine-Tuning</h1>
+    <div class="udn-ft"></div>
+</div>
+<div class="main-content">
+    <p>Fine-tuning is a crucial process in machine learning, particularly in the
+        realm of deep learning, where pre-trained models are adapted to perform
+        specific tasks. In this iterative procedure, a pre-existing model, often
+        trained on a large and diverse dataset, is further trained on a smaller,
+        task-specific dataset. This allows the model to specialize its knowledge
+        for the nuances of a particular application.
+
+        During fine-tuning, the weights and parameters of the pre-trained model
+        are adjusted based on the new dataset, optimizing the model's
+        performance for the target task. Fine-tuning is especially beneficial
+        when dealing with limited data or when adapting a model to a specific
+        domain or set of conditions. It strikes a balance between leveraging the
+        general knowledge encoded in the pre-trained model and tailoring it to
+        the specific requirements of the task at hand, resulting in more
+        effective and contextually relevant performance.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

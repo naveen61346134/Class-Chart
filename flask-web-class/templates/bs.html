@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>Beam Search</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Beam Search</h1>
+    <div class="udn-bs"></div>
+</div>
+<div class="main-content">
+    <p>Beam Search is a search algorithm widely utilized in artificial
+        intelligence models, particularly in natural language processing and
+        machine translation tasks. This heuristic search method efficiently
+        explores the space of possible solutions during decoding processes, such
+        as generating sequences of words. Beam Search maintains a set of the
+        most promising candidates, or "beams," at each step, gradually narrowing
+        down the possibilities. This approach balances exploration and
+        exploitation, aiding in the generation of more accurate and contextually
+        relevant outputs. With its ability to optimize computational resources
+        while producing high-quality results, Beam Search has become a
+        cornerstone in refining the precision and coherence of AI-generated
+        sequences, contributing to the success of various language-centric
+        applications and models.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

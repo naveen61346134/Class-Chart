@@ -1,0 +1,116 @@
+body {
+    background-image: url("/Assets/gifs/network6.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 21px 20px;
+    color: #FFD700;
+    text-align: center;
+}
+
+.main-head-block {
+    text-align: center;
+    font-size: medium;
+}
+
+.main-head {
+    color: #00ccff;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.udn-rrn {
+    height: 2px;
+    width: 550px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-ft {
+    height: 2px;
+    width: 250px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-am {
+    height: 2px;
+    width: 400px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-bs {
+    height: 2px;
+    width: 250px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-gru {
+    height: 2px;
+    width: 450px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-lstm {
+    height: 2px;
+    width: 550px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-pe {
+    height: 2px;
+    width: 350px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-tks {
+    height: 2px;
+    width: 350px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-trans {
+    height: 2px;
+    width: 250px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.udn-ts {
+    height: 2px;
+    width: 400px;
+    margin: 0px auto 0px auto;
+    background: #00CED1;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    padding: 4px 20px;
+    font-family: inherit;
+    background: white;
+}
+
+.back {
+    margin: 10px auto 10px auto;
+}
+
+.btn:hover {
+    background: rgb(124, 124, 124);
+}
+
+.main-content {
+    text-align: center;
+    color: #ff69b4;
+    font-weight: 600;
+}

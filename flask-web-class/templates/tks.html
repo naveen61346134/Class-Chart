@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>Top-K Sampling</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Top-K Sampling</h1>
+    <div class="udn-tks"></div>
+</div>
+<div class="main-content">
+    <p>Top-k sampling is a popular algorithm employed in natural language
+        processing and machine learning models for generating diverse and
+        contextually relevant sequences, such as text. In this algorithm,
+        instead of selecting a single token at each step, the top-k most
+        probable tokens are identified based on their likelihood scores. This
+        approach introduces an element of randomness and diversity, as one token
+        is then randomly sampled from this reduced set of top candidates. Top-k
+        sampling strikes a balance between deterministic generation and pure
+        randomness, allowing the model to explore various plausible options
+        while maintaining control over the output's quality and coherence. This
+        technique is valuable in scenarios where generating diverse and
+        contextually rich sequences is crucial, enhancing the flexibility and
+        creativity of AI models in tasks like language generation and text
+        completion.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

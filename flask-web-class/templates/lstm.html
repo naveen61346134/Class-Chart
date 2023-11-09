@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>LSTM</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Long Short-Term Memory(LSTM)</h1>
+    <div class="udn-lstm"></div>
+</div>
+<div>
+    <p class="main-content">Long Short-Term Memory (LSTM) is a type of recurrent
+        neural network (RNN)
+        architecture designed to overcome the limitations of traditional RNNs in
+        capturing and learning long-term dependencies in sequential data. LSTMs
+        were introduced by Sepp Hochreiter and Jürgen Schmidhuber in 1997.
+
+        The key challenge that LSTMs address is the vanishing gradient problem,
+        which is common in traditional RNNs. The vanishing gradient problem
+        occurs when the gradients of the loss function with respect to the
+        parameters become extremely small, causing the model to have difficulty
+        learning and capturing long-term dependencies.
+
+        Here are the main components and features of LSTM networks:
+
+        Cell State: LSTMs have a separate cell state that runs through the
+        entire sequence, allowing information to be carried across long
+        distances. This helps in preserving context and mitigates the vanishing
+        gradient problem.
+
+        Three Gates: LSTMs use three gates to control the flow of information:
+
+        Forget Gate: Determines what information from the cell state should be
+        thrown away or kept.
+        Input Gate: Updates the cell state with new information.
+        Output Gate: Decides what the next hidden state should be.
+        Hidden State: LSTMs have a hidden state that can carry information
+        through time steps, but it is modified by the gates to selectively
+        update and remove information.
+
+        Activation Functions: LSTMs use activation functions like the hyperbolic
+        tangent (tanh) and the sigmoid function to control the flow of
+        information and to squash values between -1 and 1.
+
+        The architecture of LSTMs allows them to capture and remember
+        information for long periods, making them particularly effective for
+        tasks involving sequential data, such as natural language processing,
+        speech recognition, and time series analysis.
+
+        In summary, LSTMs are a specialized type of RNN designed to address the
+        challenges of learning long-term dependencies. Their ability to
+        selectively store, update, and retrieve information through various
+        gates makes them well-suited for tasks where understanding context over
+        extended sequences is crucial.
+
+    </p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}

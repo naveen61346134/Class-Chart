@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<link rel="stylesheet" href="/Assets/css/subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Poppins:wght@200;400&display=swap"">
+<title>RRN</title>
+{% endblock head_content %}
+
+{% block body %}
+<div class="main-head-block">
+    <h1 class="main-head">Recurrent Neural Network(RRN)</h1>
+    <div class="udn-rrn"></div>
+</div>
+<div>
+    <p class="main-content">Recurrent Neural Networks (RNNs) are a class of
+        artificial neural
+        networks designed for sequential data processing and prediction. Unlike
+        traditional feedforward neural networks, RNNs have connections that form
+        directed cycles, allowing them to maintain a memory of previous inputs
+        in their internal state. This memory enables RNNs to capture temporal
+        dependencies and patterns in sequential data, making them well-suited
+        for tasks such as natural language processing, speech recognition, and
+        time series analysis.
+
+        The key feature of RNNs is their ability to process sequences of inputs,
+        where each input is not only influenced by the current input but also by
+        the information stored in the network's internal memory from previous
+        inputs. This makes RNNs particularly effective in tasks where context
+        and order matter.
+
+        However, traditional RNNs have limitations in capturing long-term
+        dependencies due to issues like vanishing and exploding gradients. To
+        address these problems, more advanced RNN architectures, such as Long
+        Short-Term Memory (LSTM) networks and Gated Recurrent Unit (GRU)
+        networks, have been developed. These architectures include mechanisms
+        that help the network better manage and retain information over longer
+        sequences, improving their performance on tasks requiring the modeling
+        of long-range dependencies.
+
+        In summary, RNNs are a powerful class of neural networks that excel at
+        processing sequential data, making them valuable in various applications
+        where understanding and utilizing temporal patterns are essential.</p>
+</div>
+<div class="back">
+    <a href="/"><button class="btn">Back</button></a>
+</div>
+{% endblock body %}
